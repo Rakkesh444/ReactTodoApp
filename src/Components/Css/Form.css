@@ -1,0 +1,13 @@
+@media all and (max-width:600px) {
+    .Todo__Add__Form input {
+        max-width: 100%;
+    }
+
+    .Todo__Add__Form {
+        display: block;
+    }
+
+    .Form__Submit__Btn {
+        margin-top: 20px;
+    }
+}

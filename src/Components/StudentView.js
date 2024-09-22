@@ -3,6 +3,7 @@ import { TodoForm } from "./todoForm";
 import { v4 as uuidv4 } from "uuid";
 import { Todo } from "./Todo";
 import { EditTodo } from "./EditTodo";
+import "./Css/StudentView.css";
 uuidv4()
 export const StudentView = () => {
     const [todos, setTodos] = useState([]);
@@ -24,7 +25,7 @@ export const StudentView = () => {
     }
     return (
         <>
-            <div className="bg-indigo-700 p-3.5 px-20 w-fit mx-auto rounded-lg flex flex-col" >
+            <div className="bg-indigo-700 sm:px-2.5 sm:w-fit m-auto rounded-lg flex flex-col App__Display__Container px-6">
                 <TodoForm addTodo={addTodo} />
 
                 {todos.map((todo, index) => (
